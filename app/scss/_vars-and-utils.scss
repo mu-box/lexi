@@ -1,0 +1,21 @@
+
+// Bright Blues
+$azul:            #1EB8FF;
+$azul2:           #00A2ED;
+
+@mixin checkmark($check-size:10px) {
+  /*Add another block-level blank space*/
+  content: '';
+  display: block;
+
+  /*Make it a small rectangle so the border will create an L-shape*/
+  width: $check-size/2;
+  height: $check-size;
+
+  /*Add a white border on the bottom and left, creating that 'L' */
+  border: solid $azul2;
+  border-width: 0 2px 2px 0;
+
+  /*Rotate the L 45 degrees to turn it into a checkmark*/
+  transform: rotate(45deg);
+}

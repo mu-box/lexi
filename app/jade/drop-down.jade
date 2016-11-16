@@ -1,0 +1,6 @@
+.lexi-ui.drop-down
+  each option in options
+    if option.isLabel
+      .label=option.name
+    else
+      .option(data-id="#{option.id}")= option.name

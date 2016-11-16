@@ -1,0 +1,7 @@
+@import '../lib/assets/core-styles/styles.scss';
+body{ padding:30px !important; background:#DFDFDF;  }
+.radios{margin-bottom:20px;}
+.selects{display: flex; align-items: baseline;
+  .lexi-ui{margin-right:10px}
+}
+.output{margin-top:50px; white-space: pre; font-family: "Consolas"; font-style: italic; color:#258CA7; border-top:2px solid #FFFFFF; padding-top:20px; }
