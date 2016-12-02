@@ -21,7 +21,6 @@ module.exports = class Lexi
           switch el.getAttribute('type')
             when 'radio'
               @createRadioBtn el
-
   createRadioBtn : (el) ->
     new RadioBtn el
 

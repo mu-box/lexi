@@ -1,0 +1,6 @@
+input.lexi{padding:0 0 2px 0; background: none; border-bottom: 4px solid $azul2; color:$azul2; height:initial;
+  &::-webkit-input-placeholder {color: #A6B3BD;}
+  &::-moz-placeholder          {color: #A6B3BD;}
+  &:-ms-input-placeholder      {color: #A6B3BD;}
+  &:-moz-placeholder           {color: #A6B3BD;}
+}
