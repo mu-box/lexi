@@ -1,6 +1,8 @@
 ## Lexi
 Drop in replacement for prettier form elements.
 
+![Kiku](misc/form-samples.png)
+
 ## Usage
 
 ###### HTML (jade):
@@ -32,6 +34,9 @@ select.lexi.white
     option(value="web.2") web.2
     option(value="web.3") web.3
 
+# Blue Theme
+.lexi-blue # (any parent element)
+  input.lexi(type="checkbox" checked="true")
 ```
 
 ###### javascript:
