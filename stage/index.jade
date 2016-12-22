@@ -13,48 +13,102 @@ html(lang="en")
     // endbuild
 
   body
-    .radios
-      .radio-group
-        input.lexi(value="1st" type="radio" name="group1")
-        input.lexi(value="2nd" type="radio" name="group1")
-        input.lexi(value="3rd" type="radio" name="group1" checked="checked")
-      .radio-group
-        input.lexi(value="1st" type="radio" name="group-2" checked="checked")
-        input.lexi(value="2nd" type="radio" name="group-2")
-        input.lexi(value="3rd" type="radio" name="group-2")
+    //- ------------------------------------ BLUE
+    .holder
+      .radios
+        .radio-group
+          input.lexi(value="1st" type="radio" name="group1")
+          input.lexi(value="2nd" type="radio" name="group1")
+          input.lexi(value="3rd" type="radio" name="group1" checked="checked")
+        .radio-group
+          input.lexi(value="1st" type="radio" name="group-2" checked="checked")
+          input.lexi(value="2nd" type="radio" name="group-2")
+          input.lexi(value="3rd" type="radio" name="group-2")
+      
+      .selects
+        select.lexi#a
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2") web.2
+            option(value="web.3") web.3
+
+        select.lexi.white#b
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2" selected) web.2
+            option(value="web.3") web.3
+
+        select.lexi.autoscale#c
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2") web.2
+            option(value="web.3") web.3
+      .inputs
+        input.lexi(placeholder="Type in me")
+      .checkboxes
+        input.lexi(type="checkbox" checked="true")
+        input.lexi(type="checkbox")
     
-    .selects
-      select.lexi#a
-        optgroup(label="General Types")
-          option(value="any-hosts") any host
-          option(value="any-appComponents") any app component
-          option(value="any-platformComponents") any platform component
-        optgroup(label="Specific Types")
-          option(value="web.1") web.1
-          option(value="web.2") web.2
-          option(value="web.3") web.3
+    //- ------------------------------------ BLUE
+    
+    .holder.lexi-blue
+      .radios
+        .radio-group
+          input.lexi(value="1st" type="radio" name="group1")
+          input.lexi(value="2nd" type="radio" name="group1")
+          input.lexi(value="3rd" type="radio" name="group1" checked="checked")
+        .radio-group
+          input.lexi(value="1st" type="radio" name="group-2" checked="checked")
+          input.lexi(value="2nd" type="radio" name="group-2")
+          input.lexi(value="3rd" type="radio" name="group-2")
+      
+      .selects
+        select.lexi#a
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2") web.2
+            option(value="web.3") web.3
 
-      select.lexi.white#b
-        optgroup(label="General Types")
-          option(value="any-hosts") any host
-          option(value="any-appComponents") any app component
-          option(value="any-platformComponents") any platform component
-        optgroup(label="Specific Types")
-          option(value="web.1") web.1
-          option(value="web.2" selected) web.2
-          option(value="web.3") web.3
+        select.lexi.white#b
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2" selected) web.2
+            option(value="web.3") web.3
 
-      select.lexi.autoscale#c
-        optgroup(label="General Types")
-          option(value="any-hosts") any host
-          option(value="any-appComponents") any app component
-          option(value="any-platformComponents") any platform component
-        optgroup(label="Specific Types")
-          option(value="web.1") web.1
-          option(value="web.2") web.2
-          option(value="web.3") web.3
-    .inputs
-      input.lexi(placeholder="Type in me")
+        select.lexi.autoscale#c
+          optgroup(label="General Types")
+            option(value="any-hosts") any host
+            option(value="any-appComponents") any app component
+            option(value="any-platformComponents") any platform component
+          optgroup(label="Specific Types")
+            option(value="web.1") web.1
+            option(value="web.2") web.2
+            option(value="web.3") web.3
+      .inputs
+        input.lexi(placeholder="Type in me")
+      .checkboxes
+        input.lexi(type="checkbox" checked="true")
+        input.lexi(type="checkbox")
     .output
     // build:remove 
     script(src="bower-libs/jquery/dist/jquery.js")

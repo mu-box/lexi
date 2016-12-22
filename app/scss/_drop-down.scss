@@ -1,4 +1,4 @@
-.lexi-ui.drop-down-trigger {position:relative; display: inline-flex; color: $azul2; font-style: italic; border-bottom: 4px solid $azul2; padding-bottom: 3px; cursor: pointer; font-size:16px; max-height: 30px;
+.lexi-ui.drop-down-trigger {position:relative; display: inline-flex; color: $azul2; font-style: italic; border-bottom: 3px solid $azul2; padding-bottom: 3px; cursor: pointer; font-size:16px; max-height: 30px;
   .txt                     {margin-right:10px; }
   &:after                  {margin-top: 7px; display: block; content:""; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid $azul2; margin-left: auto; transform: scaleX(0.8); }
   &.white                  {border-bottom:none; background:white; padding:8px 12px; max-height: initial;}
@@ -18,6 +18,17 @@
     &.clicked              {background: #53F0FF;  }
     &.checked              {
       &:before             {position:absolute; left:9px; top:8px; @include checkmark; }
+    }
+  }
+}
+
+// Blue background theme :
+
+.lexi-blue{
+  .lexi-ui.drop-down-trigger{
+    // Don't change the white dropdowns
+    &:not(.white)            {border-bottom-color: $azul2-blue; color:white;
+      &:after                  {border-top-color:white;}
     }
   }
 }

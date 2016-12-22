@@ -4,3 +4,9 @@ $padding    :($outer-width - $inner-width)/2 - 1;
 .lexi-ui.radio-btn{display:inline-block; width:$outer-width; height:$outer-width; border:solid 1px $azul2; border-radius:50%; cursor: pointer;
   &.active:after  {content:""; width:$inner-width; height:$inner-width; border-radius: 50%; background:$azul2; display:block; margin:$padding; }
 }
+
+.lexi-blue{
+  .lexi-ui.radio-btn {border-color:$azul2-darker;
+    &.active:after  {background:white; }
+  }
+}

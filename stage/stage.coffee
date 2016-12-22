@@ -12,4 +12,8 @@ $("select").on 'change', (e)->
 $("input[type='radio']").on 'click', (e)->
   groupName = e.currentTarget.getAttribute "name"
   val       = e.currentTarget.getAttribute "value"
-  updateOutput "the #{val} radio from the #{groupName} group was just selected"
+  updateOutput "(o) the #{val} radio from the #{groupName} group was just selected"
+
+$("input[type='checkbox']").on 'click', (e)->
+  val = if e.currentTarget.checked then '[√] A checkbox was just checked!' else '[ ] A checkbox was just unchecked.'
+  updateOutput val

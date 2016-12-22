@@ -1,0 +1,18 @@
+input.lexi{transition: border-bottom 400ms; padding:0 0 2px 0; background: none; border-bottom: 3px solid $azul2; color:$azul2; height:initial;
+  &:focus{border-bottom-color:#0776BA; }
+  &::-webkit-input-placeholder {color: #9BAFBE;}
+  &::-moz-placeholder          {color: #9BAFBE;}
+  &:-ms-input-placeholder      {color: #9BAFBE;}
+  &:-moz-placeholder           {color: #9BAFBE;}
+}
+
+.lexi-blue{
+  input.lexi{border-bottom-color:$azul2-blue; color:$white;
+    &:focus{border-bottom-color:white; }
+
+    &::-webkit-input-placeholder {color: $azul2-blue;}
+    &::-moz-placeholder          {color: $azul2-blue;}
+    &:-ms-input-placeholder      {color: $azul2-blue;}
+    &:-moz-placeholder           {color: $azul2-blue;}
+  }
+}

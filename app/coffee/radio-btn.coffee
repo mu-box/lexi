@@ -1,5 +1,3 @@
-radioBtn = require 'jade/radio-btn'
-
 module.exports = class RadioBtn
 
   constructor: (@origRadioBtn) ->

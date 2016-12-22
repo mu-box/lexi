@@ -1,0 +1,9 @@
+.lexi-ui.checkbox{position:relative; width:16px; height:16px; background:$azul2; display: inline-block; border-radius: 2px; cursor:pointer; 
+  &.checked{
+    &:before{@include checkmark(14px, white, 3px); position:absolute;left:7px; top:-2px; }
+  }
+}
+
+.lexi-blue{
+  .lexi-ui.checkbox{background:#006EAD; }
+}

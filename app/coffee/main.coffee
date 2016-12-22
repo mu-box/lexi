@@ -1,5 +1,6 @@
 DropDown = require './drop-down'
 RadioBtn = require './radio-btn'
+Checkbox = require './checkbox'
 
 module.exports = class Lexi
 
@@ -21,12 +22,16 @@ module.exports = class Lexi
           switch el.getAttribute('type')
             when 'radio'
               @createRadioBtn el
+            when 'checkbox'
+              @createCheckbox el
   createRadioBtn : (el) ->
     new RadioBtn el
 
   createDropDown : (el) ->
     new DropDown el
 
+  createCheckbox : (el) ->
+    new Checkbox el
 
 
 window.nanobox ||= {}
