@@ -9,10 +9,12 @@ input.lexi{transition: border-bottom 400ms; padding:0 0 2px 0; background: none;
 .lexi-blue{
   input.lexi{border-bottom-color:$azul2-blue; color:$white;
     &:focus{border-bottom-color:white; }
+    &::-webkit-autofill          {-webkit-text-fill-color: #fff; -webkit-box-shadow: 0 0 0px 1000px #1dacef inset; }
+    &::-webkit-input-placeholder {color: $azul2-blue !important;}
+    &::-moz-placeholder          {color: $azul2-blue !important;}
+    &:-ms-input-placeholder      {color: $azul2-blue !important;}
+    &:-moz-placeholder           {color: $azul2-blue !important;}
 
-    &::-webkit-input-placeholder {color: $azul2-blue;}
-    &::-moz-placeholder          {color: $azul2-blue;}
-    &:-ms-input-placeholder      {color: $azul2-blue;}
-    &:-moz-placeholder           {color: $azul2-blue;}
+
   }
 }
