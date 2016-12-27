@@ -3,7 +3,7 @@
     &.before    {padding-left:0; padding-right:6px}
   }
   label         {padding:0; }
-  .label        {display: inline-block;}
+  .label        {display: inline-block; white-space: nowrap;}
 }
 .lexi-blue      {
   label, .label {color:$azul2-darker}
