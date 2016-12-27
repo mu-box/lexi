@@ -11,9 +11,16 @@ module.exports = class Lexi
   lexify : ($el) =>
     # If there is no context provided, search the whole body
     if !$el? then $el = $('body')
+    return if $el.length == 0
+
+    # If they've passed in the element with the class lexi
+    if $el.hasClass 'lexi'
+      selector = "input, select"
+    else
+      selector = ".lexi input, select"
 
     # For each element with the `.lexi` class, create a lexi element
-    $(".lexi input, select", $el).each (i,el)=>
+    $(selector, $el).each (i,el)=>
       if el.style.display != 'none' # Don't lexify if hidden (or already lexified and hidden)
         tagName = el.tagName.toLowerCase()
         if tagName == 'select'
