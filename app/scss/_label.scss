@@ -1,9 +1,10 @@
-.lexi{
-  label, .label     {display:inline-block; position:relative;font-size:16px; font-weight: $semibold; font-style: italic; display: inline-block; color:$azul2; padding-left:6px;
-    &.before {padding-left:0; padding-right:6px}
+.lexi           {
+  label, .label {display:inline-block; position:relative;font-size:16px; font-weight: $semibold; font-style: italic; color:$azul2; padding-left:6px;
+    &.before    {padding-left:0; padding-right:6px}
   }
-  label {padding:0; }
+  label         {padding:0; }
+  .label        {display: inline-block;}
 }
-.lexi-blue {
-  label, .label   {color:$azul2-darker}
+.lexi-blue      {
+  label, .label {color:$azul2-darker}
 }

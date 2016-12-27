@@ -31,6 +31,8 @@ module.exports = class Lexi
               @createRadioBtn el
             when 'checkbox'
               @createCheckbox el
+            else
+              @markInput el
   createRadioBtn : (el) ->
     new RadioBtn el
 
@@ -40,6 +42,8 @@ module.exports = class Lexi
   createCheckbox : (el) ->
     new Checkbox el
 
+  markInput : (el) ->
+    $(el).addClass 'lexi-input'
 
 window.nanobox ||= {}
 nanobox.Lexi = Lexi

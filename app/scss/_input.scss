@@ -1,4 +1,4 @@
-input.lexi{transition: border-bottom 400ms; padding:0 0 2px 0; background: none; border-bottom: 3px solid $azul2; color:$azul2; height:initial;
+input.lexi-input{transition: border-bottom 400ms; padding:0 0 2px 0; background: none; border-bottom: 3px solid $azul2; color:$azul2; height:initial;
   &:focus{border-bottom-color:#0776BA; }
   &::-webkit-input-placeholder {color: #9BAFBE;}
   &::-moz-placeholder          {color: #9BAFBE;}
@@ -7,7 +7,7 @@ input.lexi{transition: border-bottom 400ms; padding:0 0 2px 0; background: none;
 }
 
 .lexi-blue{
-  input.lexi{border-bottom-color:$azul2-blue; color:$white;
+  input.lexi-input{border-bottom-color:$azul2-blue; color:$white;
     &:focus{border-bottom-color:white; }
     &::-webkit-autofill          {-webkit-text-fill-color: #fff; -webkit-box-shadow: 0 0 0px 1000px #1dacef inset; }
     &::-webkit-input-placeholder {color: $azul2-blue !important;}
