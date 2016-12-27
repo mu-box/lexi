@@ -14,19 +14,21 @@ html(lang="en")
 
   body
     //- ------------------------------------ BLUE
-    .holder
+    .holder.lexi
       .radios
         .radio-group
-          input.lexi(value="1st" type="radio" name="group3")
-          input.lexi(value="2nd" type="radio" name="group3")
-          input.lexi(value="3rd" type="radio" name="group3" checked="checked")
+          input(value="1st" type="radio" name="group3")
+          input(value="2nd" type="radio" name="group3")
+          input(value="3rd" type="radio" name="group3" checked="checked")
         .radio-group
-          input.lexi(value="1st" type="radio" name="group4" checked="checked")
-          input.lexi(value="2nd" type="radio" name="group4")
-          input.lexi(value="3rd" type="radio" name="group4")
-      
+          input(value="1st" type="radio" name="group4" checked="checked")
+          input(value="2nd" type="radio" name="group4")
+          input(value="3rd" type="radio" name="group4")
+        label
+          input(value="3rd" type="radio" name="group4")
+          | Label after radio
       .selects
-        select.lexi#a
+        select#a
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -36,7 +38,7 @@ html(lang="en")
             option(value="web.2") web.2
             option(value="web.3") web.3
 
-        select.lexi.white#b
+        select.white#b
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -46,7 +48,7 @@ html(lang="en")
             option(value="web.2" selected) web.2
             option(value="web.3") web.3
 
-        select.lexi.autoscale#c
+        select.autoscale#c
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -56,26 +58,33 @@ html(lang="en")
             option(value="web.2") web.2
             option(value="web.3") web.3
       .inputs
-        input.lexi(placeholder="Type in me")
+        input(placeholder="Type in me")
       .checkboxes
-        input.lexi(type="checkbox" checked="true")
-        input.lexi(type="checkbox")
+        label
+          | Label before
+          input(type="checkbox" checked="true")
+        label
+          input(type="checkbox" checked="true")
+          | Label after
+
+      //-   input(type="checkbox" checked="true")
+      //-   input(type="checkbox")
     
     //- ------------------------------------ BLUE
     
-    .holder.lexi-blue
+    .holder.lexi.lexi-blue
       .radios
         .radio-group
-          input.lexi(value="1st" type="radio" name="group1")
-          input.lexi(value="2nd" type="radio" name="group1")
-          input.lexi(value="3rd" type="radio" name="group1" checked="checked")
+          input(value="1st" type="radio" name="group1")
+          input(value="2nd" type="radio" name="group1")
+          input(value="3rd" type="radio" name="group1" checked="checked")
         .radio-group
-          input.lexi(value="1st" type="radio" name="group-2" checked="checked")
-          input.lexi(value="2nd" type="radio" name="group-2")
-          input.lexi(value="3rd" type="radio" name="group-2")
+          input(value="1st" type="radio" name="group-2" checked="checked")
+          input(value="2nd" type="radio" name="group-2")
+          input(value="3rd" type="radio" name="group-2")
       
       .selects
-        select.lexi#a
+        select#a
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -85,7 +94,7 @@ html(lang="en")
             option(value="web.2") web.2
             option(value="web.3") web.3
 
-        select.lexi.white#b
+        select.white#b
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -95,7 +104,7 @@ html(lang="en")
             option(value="web.2" selected) web.2
             option(value="web.3") web.3
 
-        select.lexi.autoscale#c
+        select.autoscale#c
           optgroup(label="General Types")
             option(value="any-hosts") any host
             option(value="any-appComponents") any app component
@@ -105,10 +114,13 @@ html(lang="en")
             option(value="web.2") web.2
             option(value="web.3") web.3
       .inputs
-        input.lexi(placeholder="Type in me")
+        label Regular html label
+        input(placeholder="Type in me")
       .checkboxes
-        input.lexi(type="checkbox" checked="true")
-        input.lexi(type="checkbox")
+        label
+          | asdf
+          input(type="checkbox" checked="true")
+        input(type="checkbox")
     .output
     // build:remove 
     script(src="bower-libs/jquery/dist/jquery.js")

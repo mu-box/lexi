@@ -8,7 +8,9 @@ body{ padding:30px !important; background:#DFDFDF;  }
 .holder       {padding:20px;
   &.lexi-blue {margin:60px 0; background:#1CAEF3;}
 }
-.inputs{margin:10px 0 0 0;}
+.inputs{margin:10px 0 0 0; display: flex; align-items: baseline;
+  label{margin-right:10px; }
+}
 .output{margin-top:50px; white-space: pre; font-family: "Consolas"; font-style: italic; color:#258CA7; border-top:2px solid #FFFFFF; padding-top:20px; }
 .checkboxes{margin:30px 0 0;
   .lexi-ui{margin:0 10px 0 0}

@@ -13,7 +13,7 @@ module.exports = class Lexi
     if !$el? then $el = $('body')
 
     # For each element with the `.lexi` class, create a lexi element
-    $(".lexi", $el).each (i,el)=>
+    $(".lexi input, select", $el).each (i,el)=>
       if el.style.display != 'none' # Don't lexify if hidden (or already lexified and hidden)
         tagName = el.tagName.toLowerCase()
         if tagName == 'select'
