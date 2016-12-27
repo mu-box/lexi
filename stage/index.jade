@@ -63,9 +63,16 @@ html(lang="en")
         label
           | Label before
           input(type="checkbox" checked="true")
-        label
-          input(type="checkbox" checked="true")
-          | Label after
+        label(for="user_eula_accepted")
+          input#user_eula_accepted(type="checkbox" checked="true")
+          abbr *
+          | I have read and agree to the 
+          a(href="//nanobox.io/legal/" target="_BLANK") EULA
+        .input.boolean.optional.user_remember_me
+          input(name="user[remember_me]",  type="hidden",  value="0")
+          label.boolean.optional.checkbox( for="user_remember_me" )
+            input#user_remember_me.boolean.optional( name="user[remember_me]",  type="checkbox",  value="1")
+            | Remember me
 
       //-   input(type="checkbox" checked="true")
       //-   input(type="checkbox")
