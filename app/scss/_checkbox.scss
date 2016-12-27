@@ -1,4 +1,4 @@
-.lexi-ui.checkbox  {display: inline-block; cursor:pointer; cursor:pointer;
+.lexi-ui.checkbox  {display: inline-flex; cursor:pointer; cursor:pointer; align-items: center; 
   .checker         {position:relative; width:16px; height:16px; background:$azul2; display: inline-block; border-radius: 2px; }
   &.checked        {
     .checker:after {@include checkmark(14px, white, 3px); position:absolute;left:7px; top:-2px; }
