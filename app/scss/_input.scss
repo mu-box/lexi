@@ -16,3 +16,15 @@ input.lexi-input{transition: border-bottom 400ms; padding:0 0 2px 0; background:
     &:-moz-placeholder           {color: $azul2-blue !important;}
   }
 }
+
+.field_with_errors   {
+  &:after            {content:"!"; color:white; background:#BE335D; border-radius: 50%; width:17px; height:17px; font-weight:$bold; text-align: center; font-size:16px; line-height: 19px; }
+  input.lexi-input   {border-bottom-color:#BE335D}
+}
+.lexi-blue           {
+  $dark-error:#65122A;
+  .field_with_errors {
+    &:after          {background:$dark-error; color:white; }
+    input.lexi-input {border-bottom-color:$dark-error}
+  }
+}
