@@ -1,4 +1,4 @@
-input.lexi-input{transition: border-bottom 400ms; padding:0 0 2px 0; background: none; border-bottom: 3px solid $azul2; color:$azul2; height:initial;
+input.lexi-input{transition: border-bottom 400ms; padding:0 0 2px 0; background: none; border-bottom: 3px solid $azul2; color:$azul2; height:initial; font-size: 17px;
   &:focus{border-bottom-color:#0776BA; }
   &::-webkit-input-placeholder {color: #9BAFBE;}
   &::-moz-placeholder          {color: #9BAFBE;}

@@ -73,7 +73,8 @@ html(lang="en")
           label.boolean.optional.checkbox( for="user_remember_me" )
             input#user_remember_me.boolean.optional( name="user[remember_me]",  type="checkbox",  value="1")
             | Remember me
-
+      .text-areas
+        textarea 
       //-   input(type="checkbox" checked="true")
       //-   input(type="checkbox")
     
@@ -128,6 +129,8 @@ html(lang="en")
           | asdf
           input(type="checkbox" checked="true")
         input(type="checkbox")
+      .text-areas
+        textarea
     .output
     // build:remove 
     script(src="bower-libs/jquery/dist/jquery.js")

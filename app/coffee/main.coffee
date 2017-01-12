@@ -15,35 +15,29 @@ module.exports = class Lexi
 
     # If they've passed in the element with the class lexi
     if $el.hasClass 'lexi'
-      selector = "input, select"
+      selector = "input, select, textarea"
     else
-      selector = ".lexi input, select"
+      selector = ".lexi input, select, textarea"
 
     # For each element with the `.lexi` class, create a lexi element
     $(selector, $el).each (i,el)=>
       if el.style.display != 'none' # Don't lexify if hidden (or already lexified and hidden)
         tagName = el.tagName.toLowerCase()
         if tagName == 'select'
-          @createDropDown el
+          new DropDown el
+        else if tagName == 'textarea'
+          @markTextArea el
         else if tagName == 'input'
           switch el.getAttribute('type')
             when 'radio'
-              @createRadioBtn el
+              new RadioBtn el
             when 'checkbox'
-              @createCheckbox el
+              new Checkbox el
             else
               @markInput el
-  createRadioBtn : (el) ->
-    new RadioBtn el
 
-  createDropDown : (el) ->
-    new DropDown el
-
-  createCheckbox : (el) ->
-    new Checkbox el
-
-  markInput : (el) ->
-    $(el).addClass 'lexi-input'
+  markInput    : (el) -> $(el).addClass 'lexi-input'
+  markTextArea : (el) -> $(el).addClass 'lexi-textarea'
 
 window.nanobox ||= {}
 nanobox.Lexi = Lexi
