@@ -55,7 +55,6 @@ module.exports = class DropDown
     dropdownHeight = @$dropDown.outerHeight()
     pos            = @$trigger.position()
     winHeight      = $(window).height()
-    console.log pos
     pos = @$trigger[0].getBoundingClientRect()
 
     # If dropdown would bleed off bottom of page
