@@ -2,9 +2,9 @@ $outer-width:19px;
 $inner-width:10px;
 $padding    :($outer-width - $inner-width)/2 - 1;
 .lexi-ui.radio-btn {display:inline;
-  .circle          {display: inline-block; width:$outer-width; height:$outer-width; border:solid 1px $azul2; border-radius:50%; cursor: pointer;}
+  .circle          {display: inline-flex; width:$outer-width; height:$outer-width; border:solid 1px $azul2; border-radius:50%; cursor: pointer; align-items: center; justify-content: center;}
   &.active         {
-    .circle:after  {content:""; width:$inner-width; height:$inner-width; border-radius: 50%; background:$azul2; display:block; margin: 3px 4px; }
+    .circle:after  {content:""; width:$inner-width; height:$inner-width; border-radius: 50%; background:$azul2; display:block; }
   }
   .label           {margin-top:1px; }
 }
