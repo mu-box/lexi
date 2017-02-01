@@ -127,6 +127,8 @@ module.exports = class DropDown
         obj = { id:item.getAttribute('value'), name:item.innerHTML }
         if item.getAttribute('selected')?
           obj.selected = true
+        if item.getAttribute('disabled')?
+          obj.disabled = true
         ar.push obj
 
 

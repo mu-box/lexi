@@ -3,4 +3,4 @@
     if option.isLabel
       .label=option.name
     else
-      .option(data-id="#{option.id}")= option.name
+      .option(data-id="#{option.id}" class=option.disabled ? "disabled" : "")= option.name

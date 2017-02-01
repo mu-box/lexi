@@ -19,6 +19,7 @@
     &.checked              {
       &:before             {position:absolute; left:9px; top:8px; @include checkmark; }
     }
+    &.disabled             {opacity:0.5; pointer-events: none; }
   }
 }
 
