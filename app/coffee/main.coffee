@@ -33,6 +33,8 @@ module.exports = class Lexi
               new RadioBtn el
             when 'checkbox'
               new Checkbox el
+            when 'submit'
+              x = "do nothing"
             else
               @markInput el
 
